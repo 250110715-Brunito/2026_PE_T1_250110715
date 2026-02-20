@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probabilidad y Estadística - Tema 1</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           list-style: circle;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #041e92;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color:#041e92 ;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        h3 {
+            color:#041e92;
+            margin-top: 25px;
+            font-weight: 600;
+        }
+        h4 {
+            color: #000000;
+            margin-top: 15px;
+            font-weight: 700;
+        }
+        .data-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            word-break: break-all;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos de la Tabla */
+        .table-container {
+            overflow-x: auto; /* Permite scroll en móviles */
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #d1c300;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #090053;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #ceecff;
+        }
+        tr:hover {
+            background-color: #d6fcff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Probabilidad y Estadística</h1>
+            <h2>Tema 1: Descripción de Datos</h2>
+        </header>
+
+        <main class="content"> 
+            <h3>1.- Datos Cuantitativos Discretos</h3>
+            
+            <h4>¿Qué son?:</h4>
+            <p>
+                Los datos cuantitativos son aquellos que representan cantidades numéricas. Son el "cuánto" de una investigación: aquello que se puede medir, contar y someter a operaciones matemáticas.   
+            </p>
+
+            <section>
+                <h4>Ejemplo 1: Resultados del Examen de Admisión</h4>
+                <p>Se registran las calificaciones de 100 aspirantes a un curso técnico. La calificación mínima para aprobar es de 60 puntos.</p>
+                
+                <strong>Datos:</strong>
+                <div class="data-box">
+                    72, 85, 55, 90, 65, 40, 78, 82, 60, 95, 58, 70, 88, 45, 74, 62, 81, 50, 68, 75, 92, 35, 77, 63, 85, 59, 71, 48, 66, 80, 60, 73, 84, 52, 91, 67, 79, 55, 83, 42, 76, 61, 89, 57, 64, 86, 53, 72, 90, 49, 85, 68, 74, 82, 41, 77, 63, 88, 51, 69, 70, 93, 56, 75, 81, 44, 67, 84, 60, 78, 54, 71, 87, 62, 94, 46, 80, 58, 73, 65, 82, 59, 76, 85, 38, 70, 61, 89, 52, 74, 66, 83, 47, 79, 60, 91, 55, 72, 86, 64
+                </div>
+         <section>
+    <h3>Tabla de Frecuencias (Datos Agrupados)</h3>
+    
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Clase (Intervalo de Puntaje)</th>
+                    <th>Frecuencia Absoluta </th>
+                    <th>Frecuencia Relativa </th>
+                    <th>Frecuencia Acumulada </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>35 - 44</td>
+                    <td>6</td>
+                    <td>0.06</td>
+                    <td>0.06</td>
+                </tr>
+                <tr>
+                    <td>45 - 54</td>
+                    <td>11</td>
+                    <td>0.11</td>
+                    <td>0.17</td>
+                </tr>
+                <tr>
+                    <td>55 - 64</td>
+                    <td>21</td>
+                    <td>0.21</td>
+                    <td>0.38</td>
+                </tr>
+                <tr>
+                    <td>65 - 74</td>
+                    <td>22</td>
+                    <td>0.22</td>
+                    <td>0.60</td>
+                </tr>
+                <tr>
+                    <td>75 - 84</td>
+                    <td>21</td>
+                    <td>0.21</td>
+                    <td>0.81</td>
+                </tr>
+                <tr>
+                    <td>85 - 95</td>
+                    <td>19</td>
+                    <td>0.19</td>
+                    <td>1.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="background-color: #f1f1f1; font-weight: bold;">
+                    <td>TOTAL</td>
+                    <td>100</td>
+                    <td>1.00</td>
+                    <td>-</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</section>
+       
+    </div>
+    
+<h4>Histograma de Gráfica de Frecuencia Relativa:</h4>
+<img src="imagenes/eje1.png" width="850px" height="300px"  alt="">
+<h4>Poligono de Frecuencia Relativa:</h4>
+<img src="imagenes/eje1.1.png" width="850px" height="300px"  alt="">
+<h4>Diagrama de Barras de Frecuencia Absoluta:</h4>
+<img src="imagenes/eje1.2.png" width="850px" height="300px" alt="">
+<h4>Ojiva de Frecuencia Acumulada:</h4>
+<img src="imagenes/eje1.3.png" width="850px" height="300px" alt="">
+<h4>Diagrama de Pastel de Frecuencias Relativas :</h4>
+<img src="imagenes/eje1.4.png" width="850px" height="500px" alt="">
+<hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+            <h3>2.- Datos Cuantitativos Continuos</h3>
+            
+            <h4>¿Qué son?:</h4>
+            <p>
+                Los datos cuantitativos continuos son aquellos que pueden adoptar cualquier valor numérico dentro de un intervalo específico. A diferencia de los discretos, no se limitan a números enteros, ya que entre dos valores siempre puede existir otro (gracias a los decimales). Su precisión depende del instrumento de medición utilizado.
+            </p>
+
+            <section>
+                <h4>Ejemplo 2:</h4>
+           <p>🍕 Eficiencia en el Reparto de Pizzas
+Una pizzería afirma que su tiempo de entrega promedio es de 30 minutos. Para verificar esto, el gerente de calidad registró los tiempos exactos de 100 entregas realizadas durante el último fin de semana. </p>
+</p>
+                
+                
+                <strong>Datos:</strong>
+                <div class="data-box">
+                    18.5, 18.5, 19.0, 19.2, 20.0, 20.0, 20.5, 21.0, 21.0, 21.5, 22.0, 22.0, 22.5, 22.5, 23.0, 23.0, 23.5, 24.0, 24.0, 24.0, 24.5, 25.0, 25.0, 25.0, 25.5, 25.5, 26.0, 26.0, 26.5, 26.5, 27.0, 27.0, 27.0, 27.5, 27.5, 28.0, 28.0, 28.0, 28.5, 28.5, 29.0, 29.0, 29.0, 29.5, 29.5, 30.0, 30.0, 30.0, 30.0, 30.0, 30.5, 30.5, 30.5, 31.0, 31.0, 31.5, 31.5, 32.0, 32.0, 32.5, 32.5, 33.0, 33.0, 33.0, 33.5, 34.0, 34.0, 34.5, 35.0, 35.0, 35.5, 35.5, 36.0, 36.0, 36.5, 37.0, 37.0, 37.5, 38.0, 38.0, 38.5, 39.0, 39.0, 39.5, 40.0, 40.0, 40.5, 41.0, 41.0, 41.5, 42.0, 42.0, 42.5, 43.0, 43.5, 44.0, 44.0, 44.5, 45.0, 45.0
+                </div>
+           </section>
+<section>
+                <h3>Tabla de Frecuencias </h3>
+              
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Límite Inferior</th>
+                                <th>Límite Superior</th>
+                                <th>Marca de Clase </th>
+                                <th>Frecuencia Absoluta </th>
+                                <th>Frecuencia Relativa </th>
+                                <th>Frecuencia Acumulada </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>18.5</td><td>22.3</td><td>20.4</td><td>12</td><td>0.12</td><td>0.12</td></tr>
+                            <tr><td>22.3</td><td>26.1</td><td>24.2</td><td>16</td><td>0.16</td><td>0.28</td></tr>
+                            <tr><td>26.1</td><td>29.9</td><td>28.0</td><td>17</td><td>0.17</td><td>0.45</td></tr>
+                            <tr><td>29.9</td><td>33.7</td><td>31.8</td><td>20</td><td>0.20</td><td>0.65</td></tr>
+                            <tr><td>33.7</td><td>37.5</td><td>35.6</td><td>13</td><td>0.13</td><td>0.78</td></tr>
+                            <tr><td>37.5</td><td>41.3</td><td>39.4</td><td>11</td><td>0.11</td><td>0.89</td></tr>
+                            <tr><td>41.3</td><td>45.1</td><td>43.2</td><td>11</td><td>0.11</td><td>1.00</td></tr>
+                        </tbody>
+                        <tfoot>
+                            <tr style="background-color: #f1f1f1; font-weight: bold;">
+                                <td colspan="3">TOTAL</td>
+                                <td>100</td>
+                                <td>1.00</td>
+                                <td>-</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        
+            
+    
+             
+            <h4>Histograma de Gráfica de Frecuencia Relativa Ejemplo 2:</h4>
+<img src="imagenes/eje2.png" width="850px" height="300px"  alt="">
+<h4>Poligono de Frecuencia Relativa Ejemplo 2:</h4>
+<img src="imagenes/eje2.1.png" width="850px" height="300px"  alt="">
+<h4>Diagrama de Barras de Frecuencia Absoluta Ejemplo 2:</h4>
+<img src="imagenes/eje2.2.png" width="850px" height="300px" alt="">
+<h4>Ojiva de Frecuencia Acumulada Ejemplo 2:</h4>
+<img src="imagenes/eje2.3.png" width="850px" height="300px" alt="">
+<h4>Diagrama de Pastel de Frecuencias Relativas Ejemplo 2: :</h4>
+<img src="imagenes/eje2.4.png" width="850px" height="500px" alt="">
+<hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+</main>
+
+ <h3>2.- Datos Cualitativos</h3>
+            
+            <h4>¿Qué son?:</h4>
+            <p>Los datos cualitativos se recopilan mediante entrevistas u observaciones, y se analizan categorizando la información para comprender temas y perspectivas.</p>
+<h4>Ejemplo 3:</h4>
+<p> Preferencia de Colores en una Marca de Ropa:
+Una tienda de moda desea lanzar una nueva línea de camisetas básicas. Para decidir qué colores fabricar en mayor cantidad, realizó una encuesta a 100 clientes potenciales, preguntándoles: "¿Cuál es tu color preferido para una camiseta básica?"</p>
+<section>
+    <strong>Datos (Muestra de 100 respuestas):</strong>
+    <div class="data-box">
+        " Negro", "negro", "NEGRO ", "Negro", "NEgro", "negro", " negro", "Negro", "Negro", "Negro",
+        "Negro", "Negro", "Negro", "Negro", "Negro", "Negro", "Negro", "Negro", "Negro", "Negro",
+        "Negro", "Negro", "Negro", "Negro", "Negro", " Blanco", "blanco ", "BLANCO", "Blanco", "Blanco",
+        "Blanco", "Blanco", "Blanco", "Blanco", "Blanco", "Blanco", "Blanco", "Blanco", "Blanco", "Blanco",
+        "Blanco", "Blanco", "Blanco", "Blanco", "Blanco", " Azul", "azul", "AZUL", "azul ", "Azul",
+        "Azul", "Azul", "Azul", "Azul", "Azul", "Azul", "Azul", "Azul", "Azul", "Azul", "Azul", "Azul", "Azul",
+        " GRIS", "gris ", "Gris", "gris", "Gris", "Gris", "Gris", "Gris", "Gris", "Gris", "Gris", "Gris", "Gris", "Gris", "Gris",
+        " rojo", "Rojo", "ROJO", "rojo ", "Rojo", "Rojo", "Rojo", "Rojo", "Rojo", "Rojo", "Rojo", "Rojo",
+        "Verde", "verde", "VERDE", "verde ", "Verde", "Verde", "Verde", "Verde", "Verde", "Verde",
+        "Mixto", "mixto", "MIXTO", " mixtO", "Mixto", "Mixto", "Mixto", "Mixto", "Mixto", "Mixto"
+ 
+
+    <h3>Tabla de Frecuencias</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Clase</th>
+                    <th>Frecuencia Absoluta ($f_a$)</th>
+                    <th>Frecuencia Relativa ($f_r$)</th>
+                    <th>Frecuencia Acumulada ($f_{acum}$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Azul</td>
+                    <td>18</td>
+                    <td>0.16</td>
+                    <td>0.16</td>
+                </tr>
+                <tr>
+                    <td>Blanco</td>
+                    <td>20</td>
+                    <td>0.18</td>
+                    <td>0.34</td>
+                </tr>
+                <tr>
+                    <td>Gris</td>
+                    <td>15</td>
+                    <td>0.14</td>
+                    <td>0.48</td>
+                </tr>
+                <tr>
+                    <td>Mixto</td>
+                    <td>10</td>
+                    <td>0.09</td>
+                    <td>0.57</td>
+                </tr>
+                <tr>
+                    <td>Negro</td>
+                    <td>25</td>
+                    <td>0.23</td>
+                    <td>0.80</td>
+                </tr>
+                <tr>
+                    <td>Rojo</td>
+                    <td>12</td>
+                    <td>0.11</td>
+                    <td>0.91</td>
+                </tr>
+                <tr>
+                    <td>Verde</td>
+                    <td>10</td>
+                    <td>0.09</td>
+                    <td>1.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="background-color: #f1f1f1; font-weight: bold;">
+                    <td>TOTAL</td>
+                    <td>110</td>
+                    <td>1.00</td>
+                    <td>-</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+<h4>Histograma de Gráfica de Frecuencia Relativa Ejemplo 3:</h4>
+<img src="imagenes/eje3.png" width="850px" height="300px"  alt="">
+<h4>Poligono de Frecuencia Relativa Ejemplo 2:</h4>
+<img src="imagenes/eje3.1.png" width="850px" height="300px"  alt="">
+<h4>Diagrama de Barras de Frecuencia Absoluta Ejemplo 2:</h4>
+<img src="imagenes/eje3.2.png" width="850px" height="300px" alt="">
+<h4>Ojiva de Frecuencia Acumulada Ejemplo 2:</h4>
+<img src="imagenes/eje3.3.png" width="850px" height="300px" alt="">
+<h4>Diagrama de Pastel de Frecuencias Relativas Ejemplo 2: :</h4>
+<img src="imagenes/eje3.4.png" width="850px" height="500px" alt="">
+<hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+</body>
+</html>
